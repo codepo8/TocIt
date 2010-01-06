@@ -3,16 +3,35 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
-  <title></title>
+  <title>A few demos of how to create a table of contents from HTML headings</title>
   <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
   <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/base/base.css" type="text/css">
+  <style type="text/css" media="screen">
+  html,body{background:#222;color:#ccc;}
+  a{color:#fff;}
+  li{padding:.2em 0;}
+  #doc{background:#69c;border:1em solid #69c;-moz-border-radius:5px;-moz-box-shadow:0 4px 4px #111;color:#000}
+  #hd h1{text-shadow:1px 3px 3px #111;margin:0 0 .5em 0;color:#fff}
+  #ft p{text-align:right;font-size:80%;}    
+  </style>
 </head>
 <body>
 <div id="doc" class="yui-t7">
-  <div id="hd" role="banner"><h1></h1></div>
+  <div id="hd" role="banner"><h1>TOC creation from HTML headings</h1></div>
   <div id="bd" role="main">
+    <p>Please see the <a href="">blog post for more information</a>.</p>
+    <p>All of the code here is <a href="http://github.com/codepo8/TocIt">available on GitHub</a>.</p>
+    <ul>
+      <li><a href="plain.html">Plain HTML demo showing the TOC</a></li>
+      <li><a href="toc_dom.html">Creating the TOC using DOM</a> - <a href="tocit.js">tocit-dom.js</a>.</li>
+      <li><a href="toc_js.html">Creating the TOC using JavaScript, innerHTML and Regex</a> - <a href="tocit.js">tocit.js</a>.</li>
+      <li><a href="toc_yui3.html">Creating the TOC using YUI3</a> - <a href="tocit.js">tocit-yui3.js</a>.</li>
+      <li><a href="tocit.php?file=plain.html">Looping plain.html through a PHP script to create the TOC</a>.</li>
+      <li><a href="toc_ob.php">Using the PHP output buffer to create the TOC</a>.</li>
+    </ul>
+
   </div>
-  <div id="ft" role="contentinfo"><p></p></div>
+  <div id="ft" role="contentinfo"><p>Written by <a href="http://wait-till-i.com">Christian Heilmann</a>.</p></div>
 </div>
 </body>
 </html>
